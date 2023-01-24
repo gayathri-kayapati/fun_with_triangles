@@ -44,11 +44,11 @@ body {
 }
 label {
   font-size: 1.5rem;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
 }
 input {
   min-width: 30%;
-  height: 3rem;
+  height: 2.5rem;
   border-radius: 0.5rem;
   text-align: center;
   font-size: 1.2rem;
@@ -80,4 +80,8 @@ button:hover {
 .icon {
   width: 2rem;
   padding: 0 0.5rem;
+}
+/* quiz css */
+h4 {
+  margin-top: 0.2rem;
 }

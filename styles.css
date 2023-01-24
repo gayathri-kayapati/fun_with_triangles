@@ -3,6 +3,7 @@
   --primary-color: darksalmon;
   --font-color: rgb(70, 8, 21);
   --secondary-color: rgb(255, 115, 0);
+  --link-active-color: rgb(55, 4, 137);
 }
 
 body {
@@ -26,6 +27,13 @@ body {
 .inline-list-item {
   display: inline;
   padding: 1rem;
+}
+.link {
+  text-decoration: none;
+  color: var(--font-color);
+}
+.link-active {
+  color: var(--link-active-color);
 }
 .container {
   max-width: 50%;

@@ -66,6 +66,9 @@ button:hover {
   width: 100%;
   text-align: center;
 }
+.footer-head {
+  font-size: 1.3rem;
+}
 .icon {
   width: 2rem;
   padding: 0 0.5rem;

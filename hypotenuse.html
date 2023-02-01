@@ -8,33 +8,37 @@
     <link href="styles.css" rel="stylesheet" />
   </head>
   <body>
-    <nav class="navigation">
-      <h2 class="nav-header">fun with triangles</h2>
-      <ul class="list-item-non-bullet">
-        <li class="inline-list-item">
-          <a class="link" href="isTriangle.html">Is triangle?</a>
-        </li>
-        <li class="inline-list-item">
-          <a class="link" href="quiz.html">Quiz</a>
-        </li>
-        <li class="inline-list-item">
-          <a class="link link-active" href="hypotenuse.html">Hypotenuse</a>
-        </li>
-        <li class="inline-list-item">
-          <a class="link" href="areaOfTriangle.html">Area of triangle</a>
-        </li>
-      </ul>
-    </nav>
-    <div class="container">
+    <header>
+      <nav class="navigation">
+        <h2 class="nav-header">fun with triangles</h2>
+        <ul class="list-item-non-bullet">
+          <li class="inline-list-item">
+            <a class="link link-active" href="isTriangle.html">Is triangle?</a>
+          </li>
+          <li class="inline-list-item">
+            <a class="link" href="quiz.html">Quiz</a>
+          </li>
+          <li class="inline-list-item">
+            <a class="link" href="hypotenuse.html">Hypotenuse</a>
+          </li>
+          <li class="inline-list-item">
+            <a class="link" href="areaOfTriangle.html">Area of triangle</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
       <h1>Calculate Hypotenuse of a triangle</h1>
-      <label>Enter base value : </label>
-      <input type="number" id="base-value" />
-      <label>Enter height value :</label>
-      <input type="number" id="height-value" />
-      <button id="btn">Calculate Hypotenuse</button>
+      <form id="form">
+        <label>Enter base value : </label>
+        <input type="number" id="base-value" />
+        <label>Enter height value :</label>
+        <input type="number" id="height-value" />
+        <button id="btn">Calculate Hypotenuse</button>
+      </form>
       <h3>Hypotenuse formula : √(base² + height²)</h3>
       <h2 id="output"></h2>
-    </div>
+    </main>
     <footer class="footer">
       <p class="footer-head">social media presence</p>
       <section>

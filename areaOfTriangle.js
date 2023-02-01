@@ -10,12 +10,17 @@ function calculateArea() {
   var a = Number(firstSide.value);
   var b = Number(secondSide.value);
   var c = Number(thirdSide.value);
-  console.log(a + b + c);
+  // Heron's formula for area of the triangle is (A)=√s×(s-a)×(s-b)×(s-c)
   // semi-perimeter is represented as "s"
-  var s = (a + b + c) / 2;
-  var a = Math.sqrt(s * ((s - a) * (s - b) * (s - c)));
-  output.innerText =
-    "Area of a triangle using heron's formula is " + a + " units";
+  if (a + b > c && b + c > a && c + a > b) {
+    var s = (a + b + c) / 2;
+    var a = Math.sqrt(s * ((s - a) * (s - b) * (s - c)));
+    output.innerText =
+      "Area of a triangle using heron's formula is " + a + " units";
+  } else {
+    output.innerText =
+      "Enter valid side lengths such that the sum of the any two sides lengths must be greater than the length of the other side this is the basic property of triangle.";
+  }
 }
 
 button.addEventListener("click", calculateArea);

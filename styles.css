@@ -19,6 +19,7 @@ main {
   margin: auto;
   text-align: center;
 }
+/* Navigation */
 .navigation {
   background-color: var(--primary-color);
   padding: 1rem;
@@ -36,6 +37,7 @@ main {
   display: inline;
   padding: 1rem;
 }
+/* links */
 .link {
   text-decoration: none;
   color: var(--font-color);
@@ -43,18 +45,21 @@ main {
 .link-active {
   color: var(--link-active-color);
 }
-/* label {
-  font-size: 1.5rem;
-  margin-top: 0.5rem;
-} */
-/* input {
-  min-width: 30%;
-  height: 2.5rem;
-  border-radius: 0.5rem;
+/* form */
+#form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+  font-size: 1.3rem;
+}
+#form input {
+  border-radius: 0.4rem;
+  padding: 0.7rem;
+  font-size: large;
   text-align: center;
-  font-size: 1.2rem;
-  margin-top: 1rem;
-} */
+}
+/* button */
 button {
   font-family: "Lato", sans-serif;
   margin: 1rem;
@@ -63,11 +68,12 @@ button {
   border-radius: 0.4rem;
   font-size: 1.2rem;
   color: var(--font-color);
-  background-color: var(--primary-color);
+  background-image: linear-gradient(to right, var(--primary-color), #ff3f8f);
 }
 button:hover {
-  background-color: var(--secondary-color);
+  cursor: pointer;
 }
+/* footer */
 .footer {
   bottom: 0;
   width: 100%;
@@ -80,12 +86,17 @@ button:hover {
   width: 2rem;
   padding: 0 0.5rem;
 }
-/* quiz css */
+
 h4 {
   margin-top: 0.2rem;
 }
-#form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+/* quiz-form */
+.quiz-form {
+  font-size: 1.3rem;
+}
+.question-container {
+  padding: 0.8rem;
+}
+.question-container input:hover {
+  cursor: pointer;
 }

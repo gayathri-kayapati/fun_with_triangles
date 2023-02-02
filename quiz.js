@@ -1,4 +1,5 @@
 var quizForm = document.querySelector(".quiz-form");
+var showCorrectAnswer = document.querySelectorAll(".show-correctAns");
 var submitBtn = document.querySelector("#submit-btn");
 var output = document.querySelector("#output");
 var correctAnswers = [
@@ -21,6 +22,8 @@ function countScore() {
   for (let value of formResults.values()) {
     if (value === correctAnswers[index]) {
       score++;
+    } else {
+      wrongAnswer(index);
     }
     index++;
   }
@@ -28,3 +31,9 @@ function countScore() {
 }
 
 submitBtn.addEventListener("click", countScore);
+
+function wrongAnswer(index) {
+  showCorrectAnswer[index].style.display = "block";
+  showCorrectAnswer[index].innerText =
+    "Correct answer: " + correctAnswers[index];
+}
